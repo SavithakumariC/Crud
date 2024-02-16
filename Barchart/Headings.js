@@ -1,7 +1,7 @@
 import React from "react";
 import { Dropdown } from "react-bootstrap";
 
-function Heading() {
+function Headings() {
   return (
     <div className="row">
       <div className="col-md-8">
@@ -22,4 +22,4 @@ function Heading() {
     </div>
   );
 }
-export default Heading;
+export default Headings;

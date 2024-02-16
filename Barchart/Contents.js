@@ -1,4 +1,4 @@
-function Content() {
+function Contents() {
   return (
     <>
       <div className="row">
@@ -129,4 +129,4 @@ function Content() {
     </>
   );
 }
-export default Content;
+export default Contents;

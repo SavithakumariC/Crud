@@ -1,12 +1,12 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./design.css";
-import MyNavbar from "./MyNavbar";
+import MyNavbar from "./Mynavbar";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import Content from "./Content";
-import Searchbar from "./Searchbar";
-import Heading from "./Heading";
-import Tableh from "./Tableh";
+import Content from "./Contents";
+import Searchbar from "./SearchBar";
+import Heading from "./Headings";
+import Tableh from "./TableH";
 
 function Sidebar() {
   return (
@@ -102,7 +102,7 @@ function Sidebar() {
 
             <div className="container-fluid">
               <Heading />
-              <Tableh />
+              <TableH />
               <Content />
             </div>
           </div>

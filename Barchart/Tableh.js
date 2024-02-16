@@ -1,7 +1,7 @@
 import React from "react";
 import graph from "./graph.jpeg";
 
-function Tableh() {
+function TableH() {
   return (
     <div className="row rev">
       <div className="col-md-3">
@@ -74,4 +74,4 @@ function Tableh() {
     </div>
   );
 }
-export default Tableh;
+export default TableH;
