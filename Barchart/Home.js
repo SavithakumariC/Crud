@@ -4,7 +4,7 @@ import "./design.css";
 import MyNavbar from "./MyNavbar";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Content from "./Content";
-import Searchbar from "./Seachbar";
+import Searchbar from "./Searchbar";
 import Heading from "./Heading";
 import Tableh from "./Tableh";
 

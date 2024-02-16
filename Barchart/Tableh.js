@@ -1,7 +1,7 @@
 import React from "react";
 import Profile from "./profile.jpg";
 
-function Searchbar() {
+function Table() {
   return (
     <div className="grid-container">
       <div className="grid-item item1">
@@ -36,4 +36,4 @@ function Searchbar() {
     </div>
   );
 }
-export default Searchbar;
+export default Tableh;
