@@ -6,7 +6,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import Content from "./Contents";
 import Searchbar from "./SearchBar";
 import Heading from "./Headings";
-import Tableh from "./TableH";
+import TableH from "./TableH";
 
 function Sidebar() {
   return (
