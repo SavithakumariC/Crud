@@ -6,7 +6,7 @@ function Headings() {
     <div className="row">
       <div className="col-md-8">
         <h1 className="h3 headingg" style={{ marginLeft: "30px" }}>
-          Revenue
+          Revenue Headings
         </h1>
       </div>
       <div className="col-md-2">
