@@ -14,41 +14,39 @@ function Create() {
   };
 
   return (
-    <div>
-      <Form className="form">
-        <h4>Create in CRUD</h4>
+    <Form className="form">
+      <h4>Create in CRUD</h4>
+      <Form.Field>
+        <label>First name</label>
+        <input
+          type="text"
+          name="fname"
+          value={fname}
+          onChange={(e) => setFname(e.target.value)}
+        ></input>
+      </Form.Field>
 
-        <Form.Field>
-          <label>First name</label>
-          <input
-            type="text"
-            name="fname"
-            value={fname}
-            onChange={(e) => setFname(e.target.value)}
-          ></input>
-        </Form.Field>
-        <br />
-        <Form.Field>
-          <label>Last name</label>
-          <input
-            type="text"
-            name="lname"
-            value={lname}
-            onChange={(e) => setLname(e.target.value)}
-          ></input>
-        </Form.Field>
-        <br />
-        <Form.Field>
-          <Checkbox
-            label="Agree to terms and policy"
-            checked={check}
-            onChange={() => setCheck(!check)}
-          ></Checkbox>
-        </Form.Field>
-        <br />
-        <Button onClick={callAPI}>Submit</Button>
-      </Form>
-    </div>
+      <br />
+      <Form.Field>
+        <label>Last name</label>
+        <input
+          type="text"
+          name="lname"
+          value={lname}
+          onChange={(e) => setLname(e.target.value)}
+        ></input>
+      </Form.Field>
+      <br />
+      <Form.Field>
+        <Checkbox
+          label="Agree to terms and policy"
+          checked={check}
+          onChange={() => setCheck(!check)}
+        ></Checkbox>
+      </Form.Field>
+      <br />
+      <Button onClick={callAPI} className="button">Submit</Button>
+    </Form>
   );
 }
 export default Create;

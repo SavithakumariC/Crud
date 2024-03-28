@@ -1,6 +1,6 @@
 import React from "react";
 import { Api_url } from "../Api";
-import { Button, Table } from "semantic-ui-react";
+import { Button } from "semantic-ui-react";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
@@ -27,37 +27,43 @@ function Read() {
     getData();
   }, []);
   return (
-    <div>
-      <h4>Read and Delete in CRUD</h4>
-      <Table celled>
-        <Table.Header>
-          <Table.Row>
-            <Table.HeaderCell class="t1">Name</Table.HeaderCell>
-            <Table.HeaderCell class="t1">Lname</Table.HeaderCell>
-            <Table.HeaderCell class="t1">Checkbox </Table.HeaderCell>
-            <Table.HeaderCell class="t1">Delete</Table.HeaderCell>
-            <Table.HeaderCell class="t1">Update</Table.HeaderCell>
-          </Table.Row>
-        </Table.Header>
+    <div className="container">
+      <div className="flex-container">
+        <div className="flex-item">
+          <h5 className="h5">Read , Update and Delete in CRUD</h5>
+        </div>
+        <div className="flex-item1 ">
+          <table celled className="table">
+            <thead>
+              <tr>
+                <th class="t1">Name</th>
+                <th class="t1">Lname</th>
+                <th class="t1">Checkbox </th>
+                <th class="t1">Delete</th>
+                <th class="t1">Update</th>
+              </tr>
+            </thead>
 
-        <Table.Body>
-          {apiData.map((data) => {
-            return (
-              <Table.Row>
-                <Table.Cell>{data.fname}</Table.Cell>
-                <Table.Cell>{data.lname}</Table.Cell>
-                <Table.Cell>{data.check ? "checked" : "Unchecked"}</Table.Cell>
-                <Table.Cell>
-                  <Button onClick={() => delUser(data.id)}> Delete</Button>
-                </Table.Cell>
-                <Table.Cell>
-                  <Button onClick={() => updateUser(data)}>Update</Button>
-                </Table.Cell>
-              </Table.Row>
-            );
-          })}
-        </Table.Body>
-      </Table>
+            <tbody>
+              {apiData.map((data) => {
+                return (
+                  <tr>
+                    <td>{data.fname}</td>
+                    <td>{data.lname}</td>
+                    <td>{data.check ? "checked" : "Unchecked"}</td>
+                    <td>
+                      <Button onClick={() => delUser(data.id)}> Delete</Button>
+                    </td>
+                    <td>
+                      <Button onClick={() => updateUser(data)}>Update</Button>
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   );
 }

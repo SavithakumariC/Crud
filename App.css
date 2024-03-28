@@ -2,22 +2,59 @@
 display: flex;
 height: 100vh;
 align-items:center;
+align-content: center;
 justify-content: center;
 background-color: rgb(37, 37, 37);
 flex-direction: column;
 color: aliceblue;
+flex-wrap: wrap;
+flex-shrink: 3;
 }
 div p {
-  letter-spacing: 2px;
   font-size: 14px;
+  color: rgb(185, 182, 182);
+  letter-spacing: 1px;
 }
-
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 3;
+  justify-content: center;
+}
 .form {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  flex-shrink: 3;
 }
+.h5{
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.h2{
+  margin-bottom: 10px;
+  color:rgb(96, 182, 219) ;
+
+}
+.flex-item1{
+  align-items: center;
+  flex-shrink:20;
+}
+.button{
+  border: none;
+  background-color: rgb(10, 154, 216);
+  color: white;
+  padding: 3px 10px 3px 10px;
+  border-radius: 4px;
+}
+@media(max-width:465px){
+.table{
+  overflow-x: auto;
+  width: fit-content;
+
+font-size: 14px;}}
 
 
 

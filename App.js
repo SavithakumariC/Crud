@@ -8,12 +8,19 @@ import Update from "./CRUD/Update";
 function App() {
   return (
     <div className="App">
-      <h1>Crud Application</h1>
-
-      <p>
-        Using React Hooks concepts and Integrating third party api (mockapi.io)
-      </p>
-
+      <div className="container">
+        <div className="flex-container">
+          <div className="flex-item">
+            <h2 className="h2">Crud Application</h2>
+          </div>
+          <div className="flex-item">
+            <p>
+              Using React Hooks concepts and Integrating third party api
+              (mockapi.io)
+            </p>
+          </div>
+        </div>
+      </div>
       <br />
       <BrowserRouter>
         <Routes>
